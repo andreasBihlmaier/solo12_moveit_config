@@ -1,0 +1,66 @@
+# MoveIt uses this configuration for controller management
+
+moveit_controller_manager: moveit_simple_controller_manager/MoveItSimpleControllerManager
+
+#moveit_simple_controller_manager:
+#  controller_names:
+#    - FL_controller
+#    - FR_controller
+#    - HL_controller
+#    - HR_controller
+#
+#  FL_controller:
+#    type: FollowJointTrajectory
+#    action_ns: follow_joint_trajectory
+#    default: true
+#    joints:
+#      - FL_HAA
+#      - FL_HFE
+#      - FL_KFE
+#  FR_controller:
+#    type: FollowJointTrajectory
+#    action_ns: follow_joint_trajectory
+#    default: true
+#    joints:
+#      - FR_HAA
+#      - FR_HFE
+#      - FR_KFE
+#  HL_controller:
+#    type: FollowJointTrajectory
+#    action_ns: follow_joint_trajectory
+#    default: true
+#    joints:
+#      - HL_HAA
+#      - HL_HFE
+#      - HL_KFE
+#  HR_controller:
+#    type: FollowJointTrajectory
+#    action_ns: follow_joint_trajectory
+#    default: true
+#    joints:
+#      - HR_HAA
+#      - HR_HFE
+#      - HR_KFE
+
+
+moveit_simple_controller_manager:
+  controller_names:
+    - joint_trajectory_controller
+
+  joint_trajectory_controller:
+    type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
+    default: true
+    joints:
+      - FL_HAA
+      - FL_HFE
+      - FL_KFE
+      - FR_HAA
+      - FR_HFE
+      - FR_KFE
+      - HL_HAA
+      - HL_HFE
+      - HL_KFE
+      - HR_HAA
+      - HR_HFE
+      - HR_KFE

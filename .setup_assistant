@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: ros2_description_solo
+    relative_path: urdf/solo12.urdf.xacro
+  srdf:
+    relative_path: config/solo12.srdf
+  package_settings:
+    author_name: Andreas Bihlmaier
+    author_email: andreas.bihlmaier@gmx.de
+    generated_timestamp: 1682853979
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
